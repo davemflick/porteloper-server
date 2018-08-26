@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 module.exports = {
-	port: process.env.PORT || 22 || 443 || 80 || 8081,
+	port: process.env.PORT || 80 || 8081,
 	db: process.env.PORTELOPER_DB || "mongodb://localhost:27017/portbuilder",
 	sessionSecret: process.env.SESSION_SECRET || 'my little secret',
 	authentication:{
